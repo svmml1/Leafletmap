@@ -5,9 +5,9 @@ import BottomNavigation from 'reactjs-bottom-navigation'
 import 'reactjs-bottom-navigation/dist/index.css'
 import HomeOutlined from '@material-ui/icons/HomeOutlined';
 import SearchOutlined from '@material-ui/icons/SearchOutlined';
-import FavoriteIcon from '@material-ui/icons/FavoriteIcon';
+import FavoriteOutlined from '@material-ui/icons/FavoriteOutlined';
 import MenuOutlined from '@material-ui/icons/MenuOutlined';
-import { Canvas, useThree, useFrame } from 'react-three-fiber'
+
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     {
       title: 'Search',
 
-      icon: <SearchOutlined style={{ fontSize: '24px' }} />,
+      icon: <SearchOutlined style={{ fontSize: '24px', color: '#737373' }} />,
 
       activeIcon: <SearchOutlined style={{ fontSize: '24px', color: '#3966ae' }} />
     },
@@ -33,15 +33,15 @@ function App() {
     {
       title: 'Notifications',
 
-      icon: <FavoriteIcon style={{ fontSize: '24px' }} />,
+      icon: <FavoriteOutlined style={{ fontSize: '24px', color: '#737373' }} />,
 
-      activeIcon: <FavoriteIcon style={{ fontSize: '24px', color: '#3966ae' }} />
+      activeIcon: <FavoriteOutlined style={{ fontSize: '24px', color: '#3966ae' }} />
     },
 
     {
       title: 'Menu',
 
-      icon: <MenuOutlined style={{ fontSize: '24px' }} />,
+      icon: <MenuOutlined style={{ fontSize: '24px', color: '#737373' }} />,
 
       activeIcon: <MenuOutlined style={{ fontSize: '24px', color: '#3966ae' }} />,
 
@@ -57,7 +57,7 @@ function App() {
         onItemClick={(item) => console.log(item)}
         activeTextColor={'#3966ae'}
         z-index={1}
-        activeBg
+        activeBgColor={'transparent' }
         
       />
     </div>
