@@ -1,2 +1,1 @@
-# Leafletmap
-Created with CodeSandbox
+### React with Leaflet
